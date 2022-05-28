@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SupermarketManagementSystem
 {
@@ -21,6 +22,11 @@ namespace SupermarketManagementSystem
         {
             Form2 f = new  Form2();
             f.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SupermarketManagementSystem
 {
@@ -34,7 +35,7 @@ namespace SupermarketManagementSystem
             {
                 if (textBox1 == "12")
                 {
-                    MessageBox.Show("登录成功啦袄！！！","提示：", MessageBoxButtons.OKCancel);
+                    MessageBox.Show("密码正确请登录","提示：", MessageBoxButtons.OKCancel);
                 }
                 else
                 {
@@ -56,6 +57,12 @@ namespace SupermarketManagementSystem
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
         }
     }
 }

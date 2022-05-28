@@ -33,27 +33,29 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -120,16 +122,14 @@
             this.panel1.Size = new System.Drawing.Size(184, 556);
             this.panel1.TabIndex = 4;
             // 
-            // button5
+            // button6
             // 
-            this.button5.Font = new System.Drawing.Font("宋体", 9F);
-            this.button5.Location = new System.Drawing.Point(56, 233);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(98, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "会员管理";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button6.Location = new System.Drawing.Point(31, 11);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(135, 23);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "日常事务";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // pictureBox5
             // 
@@ -141,6 +141,16 @@
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
+            this.pictureBox3.Location = new System.Drawing.Point(19, 176);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
@@ -151,15 +161,16 @@
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox3
+            // button5
             // 
-            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
-            this.pictureBox3.Location = new System.Drawing.Point(19, 176);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.button5.Font = new System.Drawing.Font("宋体", 9F);
+            this.button5.Location = new System.Drawing.Point(56, 233);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(98, 33);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "会员管理";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox2
             // 
@@ -184,6 +195,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -198,46 +211,43 @@
             this.panel2.Size = new System.Drawing.Size(793, 109);
             this.panel2.TabIndex = 5;
             // 
-            // label1
+            // label7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 19F);
-            this.label1.Location = new System.Drawing.Point(221, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "小猪佩奇超市";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(529, 86);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "流水号：";
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "销售员：";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(448, 86);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "积分：";
             // 
-            // comboBox1
+            // label5
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "张三",
-            "李四",
-            "刘五"});
-            this.comboBox1.Location = new System.Drawing.Point(60, 83);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(77, 23);
-            this.comboBox1.TabIndex = 2;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(365, 86);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "折扣：";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(143, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "会员F2：";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(284, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 15);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "姓名：";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // comboBox2
             // 
@@ -251,52 +261,67 @@
             this.comboBox2.Size = new System.Drawing.Size(77, 23);
             this.comboBox2.TabIndex = 4;
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(284, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "姓名：";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(143, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "会员F2：";
             // 
-            // label5
+            // comboBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(365, 86);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "折扣：";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "张三",
+            "李四",
+            "刘五"});
+            this.comboBox1.Location = new System.Drawing.Point(60, 83);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(77, 23);
+            this.comboBox1.TabIndex = 2;
             // 
-            // button6
+            // label2
             // 
-            this.button6.Location = new System.Drawing.Point(31, 11);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(135, 23);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "日常事务";
-            this.button6.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "销售员：";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(448, 86);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 15);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "积分：";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 19F);
+            this.label1.Location = new System.Drawing.Point(221, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 33);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "小猪佩奇超市";
             // 
-            // label7
+            // label8
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(529, 86);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "流水号：";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(618, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 15);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "销售日期：";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "张三",
+            "李四",
+            "刘五"});
+            this.comboBox3.Location = new System.Drawing.Point(693, 83);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(97, 23);
+            this.comboBox3.TabIndex = 10;
             // 
             // Form3
             // 
@@ -309,8 +334,8 @@
             this.Text = "商品销售系统";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -343,5 +368,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label8;
     }
 }

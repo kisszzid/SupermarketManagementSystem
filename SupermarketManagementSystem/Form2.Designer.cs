@@ -105,6 +105,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -121,7 +122,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 20F);
-            this.label4.Location = new System.Drawing.Point(383, 84);
+            this.label4.Location = new System.Drawing.Point(416, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 34);
             this.label4.TabIndex = 10;
@@ -151,7 +152,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 19F);
-            this.label5.Location = new System.Drawing.Point(295, 184);
+            this.label5.Location = new System.Drawing.Point(295, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 33);
             this.label5.TabIndex = 11;
@@ -161,7 +162,10 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("宋体", 15F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(444, 184);
+            this.comboBox1.Items.AddRange(new object[] {
+            "晚班",
+            "早班"});
+            this.comboBox1.Location = new System.Drawing.Point(444, 180);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 33);
             this.comboBox1.TabIndex = 12;
