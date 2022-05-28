@@ -26,7 +26,7 @@ namespace SupermarketManagementSystem
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            string textBox1 = this.textBox1.Text;//非空验证
+            /*string textBox1 = this.textBox1.Text;//非空验证
             if (textBox1 == "")
             {
                 MessageBox.Show("密码不能为空！！！！", "提示：", MessageBoxButtons.OKCancel);
@@ -41,7 +41,7 @@ namespace SupermarketManagementSystem
                 {
                     MessageBox.Show("登录失败,请返回重试！！！","提示：",MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 }
-            }
+        }*/
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -61,8 +61,50 @@ namespace SupermarketManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.Show();
+            string connstr = "server=.;database=sqw;uid=sa;pwd=123456";
+            SqlConnection conn = new SqlConnection(connstr);
+            conn.Open();
+            
+            if (comboBox1.Text!="")
+            {
+                if (comboBox2.Text!="")
+                {
+                    if (textBox1.Text!="")
+                    {
+                        string id = comboBox2.Text;
+                        string pass = textBox1.Text;
+                        string sql = string.Format("select * from Denglu where name='{0}' and mima='{1}'", id, pass);
+                        SqlDataReader reader = Class2.GetDataReader(sql);
+                        if (reader.HasRows)
+                        {
+                            Class2.Conn.Close();
+                            MessageBox.Show("登录成功！","提示：", MessageBoxButtons.OKCancel);
+                            Form3 form3 = new Form3();
+                            form3.Show();
+                        }
+                        else
+                        {
+                            Class2.Conn.Close();
+                            MessageBox.Show("登陆失败！");
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("请输入密码!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("请选择用户！");
+                }
+            }
+            else
+            {
+                MessageBox.Show("请选择班次！");
+            }
+
+            
+            }
         }
     }
-}
