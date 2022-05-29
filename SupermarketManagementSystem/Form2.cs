@@ -85,23 +85,23 @@ namespace SupermarketManagementSystem
                         else
                         {
                             Class2.Conn.Close();
-                            MessageBox.Show("登陆失败！");
+                            MessageBox.Show("登陆失败！", "提示：", MessageBoxButtons.OKCancel);
                         }
 
                     }
                     else
                     {
-                        MessageBox.Show("请输入密码!");
+                        MessageBox.Show("请输入密码!", "提示：", MessageBoxButtons.OKCancel);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("请选择用户！");
+                    MessageBox.Show("请选择用户！", "提示：", MessageBoxButtons.OKCancel);
                 }
             }
             else
             {
-                MessageBox.Show("请选择班次！");
+                MessageBox.Show("请选择班次！", "提示：", MessageBoxButtons.OKCancel);
             }
 
             

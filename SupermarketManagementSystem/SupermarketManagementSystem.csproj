@@ -120,5 +120,11 @@
   <ItemGroup>
     <None Include="Resources\日历.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\项目背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\项目背景1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
