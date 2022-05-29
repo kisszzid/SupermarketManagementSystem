@@ -51,11 +51,11 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 20F);
             this.button1.Location = new System.Drawing.Point(12, 316);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 59);
+            this.button1.Size = new System.Drawing.Size(393, 59);
             this.button1.TabIndex = 1;
             this.button1.Text = "请先点击进入";
             this.button1.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(282, 9);
+            this.label5.Location = new System.Drawing.Point(268, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 30);
             this.label5.TabIndex = 5;
@@ -104,10 +104,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(856, 9);
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label6.Location = new System.Drawing.Point(735, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 32);
+            this.label6.Size = new System.Drawing.Size(137, 39);
             this.label6.TabIndex = 6;
             this.label6.Text = "超市软件";
             // 

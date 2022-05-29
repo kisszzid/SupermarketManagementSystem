@@ -76,7 +76,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 15F);
-            this.textBox1.Location = new System.Drawing.Point(444, 341);
+            this.textBox1.Location = new System.Drawing.Point(444, 335);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(224, 36);
             this.textBox1.TabIndex = 3;
