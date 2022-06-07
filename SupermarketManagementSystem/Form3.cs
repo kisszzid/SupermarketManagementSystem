@@ -54,7 +54,8 @@ namespace SupermarketManagementSystem
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            this.timer1.Start();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -70,6 +71,21 @@ namespace SupermarketManagementSystem
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.textBox1.Text = DateTime.Now.ToString();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
