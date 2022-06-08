@@ -34,7 +34,8 @@ namespace SupermarketManagementSystem
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
+            Form4 form4 = new Form4();
+            form4.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -76,11 +77,6 @@ namespace SupermarketManagementSystem
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.textBox1.Text = DateTime.Now.ToString();
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button21_Click(object sender, EventArgs e)

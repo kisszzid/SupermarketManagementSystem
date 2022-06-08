@@ -39,12 +39,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,6 +53,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -73,32 +72,33 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -204,43 +204,13 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(45, 14);
+            this.button6.Location = new System.Drawing.Point(0, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 30);
+            this.button6.Size = new System.Drawing.Size(157, 30);
             this.button6.TabIndex = 10;
             this.button6.Text = "日常事务";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::SupermarketManagementSystem.Properties.Resources.日历;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 291);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 176);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 233);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
             // 
             // button5
             // 
@@ -252,27 +222,6 @@
             this.button5.Text = "会员管理";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SupermarketManagementSystem.Properties.Resources.OIP_C;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.金钱小图标;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -297,15 +246,6 @@
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "2022-6-1",
-            "2022-6-2",
-            "2022-6-3",
-            "2022-6-4",
-            "2022-6-5",
-            "2022-6-6",
-            "2022-6-7",
-            "2022-6-8",
-            "2022-6-9",
             "2022-6-10",
             "2022-6-11",
             "2022-6-12",
@@ -438,6 +378,43 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(817, 169);
             this.panel3.TabIndex = 6;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(217, 15);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 19);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "退货";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(6, 6);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(205, 35);
+            this.button20.TabIndex = 24;
+            this.button20.Text = "F3 编号\\拼音+回车确认";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(6, 42);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(205, 35);
+            this.button19.TabIndex = 23;
+            this.button19.Text = "￥ F5 结算";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(6, 78);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(275, 35);
+            this.button18.TabIndex = 22;
+            this.button18.Text = "选择";
+            this.button18.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
@@ -581,43 +558,6 @@
             this.panel6.Size = new System.Drawing.Size(200, 62);
             this.panel6.TabIndex = 7;
             // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(6, 78);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(275, 35);
-            this.button18.TabIndex = 22;
-            this.button18.Text = "选择";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(6, 42);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(205, 35);
-            this.button19.TabIndex = 23;
-            this.button19.Text = "￥ F5 结算";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(6, 6);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(205, 35);
-            this.button20.TabIndex = 24;
-            this.button20.Text = "F3 编号\\拼音+回车确认";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(217, 15);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 19);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "退货";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -635,46 +575,36 @@
             this.panel9.Size = new System.Drawing.Size(980, 35);
             this.panel9.TabIndex = 8;
             // 
-            // label12
+            // button22
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("宋体", 9F);
-            this.label12.Location = new System.Drawing.Point(6, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(178, 15);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "官方网站：www.kkpos.cn\r\n";
+            this.button22.Font = new System.Drawing.Font("宋体", 9F);
+            this.button22.Location = new System.Drawing.Point(881, 4);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(85, 28);
+            this.button22.TabIndex = 16;
+            this.button22.Text = "返回主页";
+            this.button22.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // button21
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("宋体", 9F);
-            this.label13.Location = new System.Drawing.Point(198, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(148, 15);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "客服QQ：2405380353";
+            this.button21.Font = new System.Drawing.Font("宋体", 9F);
+            this.button21.Location = new System.Drawing.Point(789, 3);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(86, 29);
+            this.button21.TabIndex = 15;
+            this.button21.Text = "重新登录";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // timer1
+            // label15
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(405, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 17);
-            this.label14.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 9F);
-            this.textBox1.Location = new System.Drawing.Point(368, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 25);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "textBox1";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("宋体", 9F);
+            this.label15.Location = new System.Drawing.Point(553, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(67, 15);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "当前用户";
             // 
             // comboBox4
             // 
@@ -688,36 +618,97 @@
             this.comboBox4.Size = new System.Drawing.Size(131, 25);
             this.comboBox4.TabIndex = 4;
             // 
-            // label15
+            // textBox1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("宋体", 9F);
-            this.label15.Location = new System.Drawing.Point(553, 9);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(67, 15);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "当前用户";
+            this.textBox1.Font = new System.Drawing.Font("宋体", 9F);
+            this.textBox1.Location = new System.Drawing.Point(368, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(169, 25);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "textBox1";
             // 
-            // button21
+            // label14
             // 
-            this.button21.Font = new System.Drawing.Font("宋体", 9F);
-            this.button21.Location = new System.Drawing.Point(789, 3);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(86, 29);
-            this.button21.TabIndex = 15;
-            this.button21.Text = "重新登录";
-            this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(405, 18);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 17);
+            this.label14.TabIndex = 2;
             // 
-            // button22
+            // label13
             // 
-            this.button22.Font = new System.Drawing.Font("宋体", 9F);
-            this.button22.Location = new System.Drawing.Point(881, 4);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(85, 28);
-            this.button22.TabIndex = 16;
-            this.button22.Text = "返回主页";
-            this.button22.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("宋体", 9F);
+            this.label13.Location = new System.Drawing.Point(198, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(148, 15);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "客服QQ：2405380353";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("宋体", 9F);
+            this.label12.Location = new System.Drawing.Point(6, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(178, 15);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "官方网站：www.kkpos.cn\r\n";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::SupermarketManagementSystem.Properties.Resources.日历;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 291);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 176);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 233);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SupermarketManagementSystem.Properties.Resources.OIP_C;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.金钱小图标;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
@@ -733,11 +724,6 @@
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -748,6 +734,11 @@
             this.panel4.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
