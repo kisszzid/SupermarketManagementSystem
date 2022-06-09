@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace SupermarketManagementSystem
 {
-    internal class Class2
+    internal class DBHelper
     {
         public static string ConnString = "server=.;database=sqw;uid =sa;pwd =123456";
         public static SqlConnection Conn = null;

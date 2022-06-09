@@ -74,17 +74,17 @@ namespace SupermarketManagementSystem
                         string id = comboBox2.Text;
                         string pass = textBox1.Text;
                         string sql = string.Format("select * from Denglu where name='{0}' and mima='{1}'", id, pass);
-                        SqlDataReader reader = Class2.GetDataReader(sql);
+                        SqlDataReader reader = DBHelper.GetDataReader(sql);
                         if (reader.HasRows)
                         {
-                            Class2.Conn.Close();
+                            DBHelper.Conn.Close();
                             MessageBox.Show("登录成功！","提示：", MessageBoxButtons.OKCancel);
                             Form3 form3 = new Form3();
                             form3.Show();
                         }
                         else
                         {
-                            Class2.Conn.Close();
+                            DBHelper.Conn.Close();
                             MessageBox.Show("登陆失败！", "提示：", MessageBoxButtons.OKCancel);
                         }
 
