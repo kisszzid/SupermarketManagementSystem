@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SupermarketManagementSystem
 {
-    public partial class Form5 : Form
+    public partial class Form8 : Form
     {
-        public Form5()
+        public Form8()
         {
             InitializeComponent();
-        }
-
-        private void Form6_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
