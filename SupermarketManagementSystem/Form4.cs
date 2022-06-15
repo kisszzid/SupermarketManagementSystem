@@ -26,5 +26,27 @@ namespace SupermarketManagementSystem
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 Form3 = new Form3();
+            Form3.Show();
+            Hide();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

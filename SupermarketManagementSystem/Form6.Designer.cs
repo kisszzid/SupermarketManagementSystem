@@ -1,6 +1,6 @@
 ﻿namespace SupermarketManagementSystem
 {
-    partial class Form6
+    partial class Form7
     {
         /// <summary>
         /// Required designer variable.
@@ -108,7 +108,7 @@
             // 
             this.button5.Location = new System.Drawing.Point(488, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(75, 25);
             this.button5.TabIndex = 6;
             this.button5.Text = "查询";
             this.button5.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             // 
             this.button6.Location = new System.Drawing.Point(759, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 23);
+            this.button6.Size = new System.Drawing.Size(95, 25);
             this.button6.TabIndex = 7;
             this.button6.Text = "导入/导出";
             this.button6.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             this.button12.Text = "每日明细";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // Form6
+            // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +197,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form6";
+            this.Name = "Form7";
             this.Text = "Form6";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

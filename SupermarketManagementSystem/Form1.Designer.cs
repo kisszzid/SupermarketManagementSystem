@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 36F);
-            this.label1.Location = new System.Drawing.Point(12, 87);
+            this.label1.Location = new System.Drawing.Point(12, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(393, 78);
             this.label1.TabIndex = 0;
@@ -52,10 +52,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 20F);
-            this.button1.Location = new System.Drawing.Point(12, 316);
+            this.button1.Location = new System.Drawing.Point(12, 298);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(312, 59);
+            this.button1.Size = new System.Drawing.Size(328, 59);
             this.button1.TabIndex = 1;
             this.button1.Text = "请先点击进入";
             this.button1.UseVisualStyleBackColor = true;
@@ -115,7 +115,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 20F);
-            this.label7.Location = new System.Drawing.Point(9, 208);
+            this.label7.Location = new System.Drawing.Point(9, 216);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(581, 45);
             this.label7.TabIndex = 7;

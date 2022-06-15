@@ -39,9 +39,13 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -82,23 +86,40 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.sqwDataSet = new SupermarketManagementSystem.sqwDataSet();
+            this.huiyuangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.huiyuangTableAdapter = new SupermarketManagementSystem.sqwDataSetTableAdapters.HuiyuangTableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sqwDataSet1 = new SupermarketManagementSystem.sqwDataSet1();
+            this.diyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.diyTableAdapter = new SupermarketManagementSystem.sqwDataSet1TableAdapters.DiyTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shulDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yuanjDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zhekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoujDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xiaojDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xiaosyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.biezDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.huiyuangBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -132,6 +153,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "库存查询";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -142,6 +164,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "每日明细";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel1
             // 
@@ -212,6 +235,36 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::SupermarketManagementSystem.Properties.Resources.日历;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 291);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 176);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 233);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("宋体", 9F);
@@ -223,10 +276,31 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SupermarketManagementSystem.Properties.Resources.OIP_C;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.金钱小图标;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
@@ -242,30 +316,10 @@
             this.panel2.Size = new System.Drawing.Size(817, 109);
             this.panel2.TabIndex = 5;
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "2022-6-10",
-            "2022-6-11",
-            "2022-6-12",
-            "2022-6-13",
-            "2022-6-14",
-            "2022-6-15",
-            "2022-6-16",
-            "2022-6-17",
-            "2022-6-18",
-            "2022-6-19",
-            "2022-6-20"});
-            this.comboBox3.Location = new System.Drawing.Point(700, 83);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(114, 23);
-            this.comboBox3.TabIndex = 10;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(629, 86);
+            this.label8.Location = new System.Drawing.Point(577, 86);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 15);
             this.label8.TabIndex = 9;
@@ -274,7 +328,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(541, 86);
+            this.label7.Location = new System.Drawing.Point(495, 86);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 15);
             this.label7.TabIndex = 8;
@@ -283,7 +337,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(448, 86);
+            this.label6.Location = new System.Drawing.Point(427, 86);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 7;
@@ -292,7 +346,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(365, 86);
+            this.label5.Location = new System.Drawing.Point(353, 86);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 6;
@@ -659,71 +713,155 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox5
+            // dateTimePicker1
             // 
-            this.pictureBox5.Image = global::SupermarketManagementSystem.Properties.Resources.日历;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 291);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(665, 79);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(149, 25);
+            this.dateTimePicker1.TabIndex = 10;
             // 
-            // pictureBox3
+            // sqwDataSet
             // 
-            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 176);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.sqwDataSet.DataSetName = "sqwDataSet";
+            this.sqwDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pictureBox4
+            // huiyuangBindingSource
             // 
-            this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 233);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
+            this.huiyuangBindingSource.DataMember = "Huiyuang";
+            this.huiyuangBindingSource.DataSource = this.sqwDataSet;
             // 
-            // pictureBox2
+            // huiyuangTableAdapter
             // 
-            this.pictureBox2.Image = global::SupermarketManagementSystem.Properties.Resources.OIP_C;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.huiyuangTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox1
+            // dataGridView1
             // 
-            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.金钱小图标;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.shulDataGridViewTextBoxColumn,
+            this.yuanjDataGridViewTextBoxColumn,
+            this.zhekDataGridViewTextBoxColumn,
+            this.shoujDataGridViewTextBoxColumn,
+            this.xiaojDataGridViewTextBoxColumn,
+            this.xiaosyDataGridViewTextBoxColumn,
+            this.biezDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.diyBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 108);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(816, 241);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // sqwDataSet1
+            // 
+            this.sqwDataSet1.DataSetName = "sqwDataSet1";
+            this.sqwDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // diyBindingSource
+            // 
+            this.diyBindingSource.DataMember = "Diy";
+            this.diyBindingSource.DataSource = this.sqwDataSet1;
+            // 
+            // diyTableAdapter
+            // 
+            this.diyTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // shulDataGridViewTextBoxColumn
+            // 
+            this.shulDataGridViewTextBoxColumn.DataPropertyName = "shul";
+            this.shulDataGridViewTextBoxColumn.HeaderText = "shul";
+            this.shulDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shulDataGridViewTextBoxColumn.Name = "shulDataGridViewTextBoxColumn";
+            this.shulDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // yuanjDataGridViewTextBoxColumn
+            // 
+            this.yuanjDataGridViewTextBoxColumn.DataPropertyName = "yuanj";
+            this.yuanjDataGridViewTextBoxColumn.HeaderText = "yuanj";
+            this.yuanjDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yuanjDataGridViewTextBoxColumn.Name = "yuanjDataGridViewTextBoxColumn";
+            this.yuanjDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zhekDataGridViewTextBoxColumn
+            // 
+            this.zhekDataGridViewTextBoxColumn.DataPropertyName = "zhek";
+            this.zhekDataGridViewTextBoxColumn.HeaderText = "zhek";
+            this.zhekDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zhekDataGridViewTextBoxColumn.Name = "zhekDataGridViewTextBoxColumn";
+            this.zhekDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // shoujDataGridViewTextBoxColumn
+            // 
+            this.shoujDataGridViewTextBoxColumn.DataPropertyName = "shouj";
+            this.shoujDataGridViewTextBoxColumn.HeaderText = "shouj";
+            this.shoujDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shoujDataGridViewTextBoxColumn.Name = "shoujDataGridViewTextBoxColumn";
+            this.shoujDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // xiaojDataGridViewTextBoxColumn
+            // 
+            this.xiaojDataGridViewTextBoxColumn.DataPropertyName = "xiaoj";
+            this.xiaojDataGridViewTextBoxColumn.HeaderText = "xiaoj";
+            this.xiaojDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.xiaojDataGridViewTextBoxColumn.Name = "xiaojDataGridViewTextBoxColumn";
+            this.xiaojDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // xiaosyDataGridViewTextBoxColumn
+            // 
+            this.xiaosyDataGridViewTextBoxColumn.DataPropertyName = "xiaosy";
+            this.xiaosyDataGridViewTextBoxColumn.HeaderText = "xiaosy";
+            this.xiaosyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.xiaosyDataGridViewTextBoxColumn.Name = "xiaosyDataGridViewTextBoxColumn";
+            this.xiaosyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // biezDataGridViewTextBoxColumn
+            // 
+            this.biezDataGridViewTextBoxColumn.DataPropertyName = "biez";
+            this.biezDataGridViewTextBoxColumn.HeaderText = "biez";
+            this.biezDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.biezDataGridViewTextBoxColumn.Name = "biezDataGridViewTextBoxColumn";
+            this.biezDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 553);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form3";
-            this.Text = " ";
+            this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -734,11 +872,11 @@
             this.panel4.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.huiyuangBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diyBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -767,7 +905,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
@@ -803,5 +940,22 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private sqwDataSet sqwDataSet;
+        private System.Windows.Forms.BindingSource huiyuangBindingSource;
+        private sqwDataSetTableAdapters.HuiyuangTableAdapter huiyuangTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private sqwDataSet1 sqwDataSet1;
+        private System.Windows.Forms.BindingSource diyBindingSource;
+        private sqwDataSet1TableAdapters.DiyTableAdapter diyTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shulDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yuanjDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zhekDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoujDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xiaojDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xiaosyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn biezDataGridViewTextBoxColumn;
     }
 }

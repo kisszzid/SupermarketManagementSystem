@@ -31,37 +31,39 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sqwDataSet1 = new SupermarketManagementSystem.sqwDataSet();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,101 +119,101 @@
             this.panel2.Size = new System.Drawing.Size(977, 256);
             this.panel2.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // textBox9
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
-            this.dateTimePicker1.TabIndex = 0;
+            this.textBox9.Location = new System.Drawing.Point(403, 203);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(101, 25);
+            this.textBox9.TabIndex = 29;
             // 
-            // comboBox1
+            // label10
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(220, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 1;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(324, 206);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 15);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "备注：";
             // 
-            // button1
+            // button7
             // 
-            this.button1.Location = new System.Drawing.Point(476, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 24);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button7.Location = new System.Drawing.Point(841, 206);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(124, 32);
+            this.button7.TabIndex = 27;
+            this.button7.Text = "每日明细";
+            this.button7.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // button6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "编号：";
+            this.button6.Location = new System.Drawing.Point(841, 158);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(124, 32);
+            this.button6.TabIndex = 26;
+            this.button6.Text = "会员管理";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // textBox1
+            // button5
             // 
-            this.textBox1.Location = new System.Drawing.Point(363, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 5;
+            this.button5.Location = new System.Drawing.Point(841, 115);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(124, 32);
+            this.button5.TabIndex = 25;
+            this.button5.Text = "库存查询";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // textBox2
+            // button4
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 25);
-            this.textBox2.TabIndex = 6;
+            this.button4.Location = new System.Drawing.Point(841, 67);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 32);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "进货采购";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // button3
             // 
-            this.textBox3.Location = new System.Drawing.Point(123, 84);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(151, 25);
-            this.textBox3.TabIndex = 8;
+            this.button3.Location = new System.Drawing.Point(841, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(124, 32);
+            this.button3.TabIndex = 23;
+            this.button3.Text = "商品采购";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label3
+            // dateTimePicker2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "名称：";
+            this.dateTimePicker2.Location = new System.Drawing.Point(403, 165);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 25);
+            this.dateTimePicker2.TabIndex = 21;
             // 
-            // textBox4
+            // textBox8
             // 
-            this.textBox4.Location = new System.Drawing.Point(123, 125);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(101, 25);
-            this.textBox4.TabIndex = 10;
+            this.textBox8.Location = new System.Drawing.Point(403, 122);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(151, 25);
+            this.textBox8.TabIndex = 20;
             // 
-            // label4
+            // label8
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 15);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "数量：";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(324, 132);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 15);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "折扣：";
             // 
-            // textBox5
+            // label9
             // 
-            this.textBox5.Location = new System.Drawing.Point(123, 165);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(101, 25);
-            this.textBox5.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(44, 175);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "进价：";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(324, 175);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 15);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "日期：";
             // 
             // textBox6
             // 
@@ -246,108 +248,116 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "售价：";
             // 
-            // textBox8
+            // textBox5
             // 
-            this.textBox8.Location = new System.Drawing.Point(403, 122);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(151, 25);
-            this.textBox8.TabIndex = 20;
+            this.textBox5.Location = new System.Drawing.Point(123, 165);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(101, 25);
+            this.textBox5.TabIndex = 12;
             // 
-            // label8
+            // label5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(324, 132);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 15);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "折扣：";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(44, 175);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "进价：";
             // 
-            // label9
+            // textBox4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(324, 175);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 15);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "日期：";
+            this.textBox4.Location = new System.Drawing.Point(123, 125);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(101, 25);
+            this.textBox4.TabIndex = 10;
             // 
-            // dateTimePicker2
+            // label4
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(403, 165);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 25);
-            this.dateTimePicker2.TabIndex = 21;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(44, 135);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 15);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "数量：";
             // 
-            // button3
+            // textBox3
             // 
-            this.button3.Location = new System.Drawing.Point(841, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 32);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "商品采购";
-            this.button3.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(123, 84);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(151, 25);
+            this.textBox3.TabIndex = 8;
             // 
-            // button4
+            // label3
             // 
-            this.button4.Location = new System.Drawing.Point(841, 67);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 32);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "进货采购";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(44, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "名称：";
             // 
-            // button5
+            // textBox2
             // 
-            this.button5.Location = new System.Drawing.Point(841, 115);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(124, 32);
-            this.button5.TabIndex = 25;
-            this.button5.Text = "库存管理";
-            this.button5.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(123, 43);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(151, 25);
+            this.textBox2.TabIndex = 6;
             // 
-            // button6
+            // textBox1
             // 
-            this.button6.Location = new System.Drawing.Point(841, 158);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 32);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "会员管理";
-            this.button6.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(363, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.TabIndex = 5;
             // 
-            // button7
+            // label2
             // 
-            this.button7.Location = new System.Drawing.Point(841, 206);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(124, 32);
-            this.button7.TabIndex = 27;
-            this.button7.Text = "每日明细";
-            this.button7.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(44, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "编号：";
             // 
-            // textBox9
+            // button1
             // 
-            this.textBox9.Location = new System.Drawing.Point(403, 203);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(101, 25);
-            this.textBox9.TabIndex = 29;
+            this.button1.Location = new System.Drawing.Point(476, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 24);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "查询";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label10
+            // comboBox1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(324, 206);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 15);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "备注：";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(220, 4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 3);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
+            this.dateTimePicker1.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 281);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 289);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(977, 273);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // sqwDataSet1
+            // 
+            this.sqwDataSet1.DataSetName = "sqwDataSet";
+            this.sqwDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form4
             // 
@@ -359,11 +369,13 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -401,5 +413,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private sqwDataSet sqwDataSet1;
     }
 }

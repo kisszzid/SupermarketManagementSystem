@@ -98,6 +98,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqwDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +151,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sqwDataSet.xsc">
+      <DependentUpon>sqwDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet.xss">
+      <DependentUpon>sqwDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet1.xsc">
+      <DependentUpon>sqwDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet1.xss">
+      <DependentUpon>sqwDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

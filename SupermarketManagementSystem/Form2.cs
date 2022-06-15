@@ -78,9 +78,17 @@ namespace SupermarketManagementSystem
                         if (reader.HasRows)
                         {
                             DBHelper.Conn.Close();
-                            MessageBox.Show("登录成功！","提示：", MessageBoxButtons.OKCancel);
-                            Form3 form3 = new Form3();
-                            form3.Show();
+                            DialogResult result = MessageBox.Show("登录成功！","提示：", MessageBoxButtons.OKCancel);
+                            if (result==DialogResult.OK)
+                            {
+                                Form3 form3 = new Form3();
+                                form3.Show();
+                            }
+                            else
+                            {
+                                Close();
+                            }
+                           
                         }
                         else
                         {

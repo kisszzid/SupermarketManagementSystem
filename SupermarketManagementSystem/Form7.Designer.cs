@@ -1,6 +1,6 @@
 ﻿namespace SupermarketManagementSystem
 {
-    partial class Form7
+    partial class 员工管理
     {
         /// <summary>
         /// Required designer variable.
@@ -72,7 +72,7 @@
             this.button3.Text = "删除";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form7
+            // 员工管理
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,8 +82,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form7";
-            this.Text = "Form7";
+            this.Name = "员工管理";
+            this.Text = "From7";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

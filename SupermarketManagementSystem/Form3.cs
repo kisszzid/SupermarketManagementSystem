@@ -24,13 +24,16 @@ namespace SupermarketManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            员工管理 form7 = new 员工管理();
+            form7.Show();
+            Hide();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
             form4.Show();
+            Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -50,6 +53,10 @@ namespace SupermarketManagementSystem
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: 这行代码将数据加载到表“sqwDataSet1.Diy”中。您可以根据需要移动或移除它。
+            this.diyTableAdapter.Fill(this.sqwDataSet1.Diy);
+            // TODO: 这行代码将数据加载到表“sqwDataSet.Huiyuang”中。您可以根据需要移动或移除它。
+            this.huiyuangTableAdapter.Fill(this.sqwDataSet.Huiyuang);
             this.timer1.Start();
             
         }
@@ -77,6 +84,20 @@ namespace SupermarketManagementSystem
         private void button21_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 Form6 = new Form7();
+            Form6.Show();
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form8 Form8 = new Form8();
+            Form8.Show();
+            Hide();
         }
     }
 }
