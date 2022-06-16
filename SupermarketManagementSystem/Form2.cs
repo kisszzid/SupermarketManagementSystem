@@ -83,6 +83,7 @@ namespace SupermarketManagementSystem
                             {
                                 Form3 form3 = new Form3();
                                 form3.Show();
+                                Close();
                             }
                             else
                             {

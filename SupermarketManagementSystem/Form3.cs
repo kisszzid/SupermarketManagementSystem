@@ -24,7 +24,7 @@ namespace SupermarketManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-            员工管理 form7 = new 员工管理();
+            Form7 form7 = new Form7();
             form7.Show();
             Hide();
         }
@@ -83,12 +83,14 @@ namespace SupermarketManagementSystem
 
         private void button21_Click(object sender, EventArgs e)
         {
-           
+            Form2 Form2 = new Form2();
+            Form2.Show();
+            Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form7 Form6 = new Form7();
+            Form6 Form6 = new Form6();
             Form6.Show();
             Hide();
         }
@@ -98,6 +100,12 @@ namespace SupermarketManagementSystem
             Form8 Form8 = new Form8();
             Form8.Show();
             Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+
         }
     }
 }

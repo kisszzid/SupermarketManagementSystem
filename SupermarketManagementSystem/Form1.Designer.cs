@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,6 +51,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 20F);
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(12, 298);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
@@ -101,20 +101,11 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "安全A";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label6.Location = new System.Drawing.Point(833, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 39);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "超市软件";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 20F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(9, 216);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(581, 45);
@@ -128,7 +119,6 @@
             this.BackgroundImage = global::SupermarketManagementSystem.Properties.Resources.项目背景;
             this.ClientSize = new System.Drawing.Size(977, 553);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -154,7 +144,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
     }
 }
