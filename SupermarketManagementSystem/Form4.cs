@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SupermarketManagementSystem
 {
@@ -60,6 +61,26 @@ namespace SupermarketManagementSystem
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string ID = textBox2.Text;
+            string name = textBox3.Text;
+            string shul = textBox4.Text;
+            string jinj = textBox5.Text;
+            string jiner = textBox6.Text;
+            string shouj = textBox7.Text;
+            string zhek = textBox8.Text;
+            string riqi = dateTimePicker2.Text;
+            string baiz = textBox9.Text;
+            
+            
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
         }
