@@ -67,16 +67,32 @@ namespace SupermarketManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string ID = textBox2.Text;
-            string name = textBox3.Text;
-            string shul = textBox4.Text;
-            string jinj = textBox5.Text;
-            string jiner = textBox6.Text;
-            string shouj = textBox7.Text;
-            string zhek = textBox8.Text;
-            string riqi = dateTimePicker2.Text;
-            string baiz = textBox9.Text;
-            
+            string connstr = "server=.;datase=sqw;uid=sa;pwd=1234";
+            SqlConnection conn = new SqlConnection(connstr);
+            conn.Open();
+            if (textBox2.Text != "" && textBox3.Text!="" && textBox4.Text!="" && textBox5.Text!="" && textBox6.Text!="" && textBox7.Text!="" && textBox8.Text!="" && textBox9.Text!="")
+            {
+                int ID = int.Parse(textBox2.Text);
+                string name = textBox3.Text;
+                string shul = textBox4.Text;
+                string jinj = textBox5.Text;
+                string jiner = textBox6.Text;
+                string shouj = textBox7.Text;
+                string zhek = textBox8.Text;
+                string riqi = dateTimePicker2.Text;
+                string baiz = textBox9.Text;
+                string sql = "insert huhu values({ID},'{name}','{shul}','{jinj}','{jiner}','{shouj}','{zhek}','{riqi}','{baiz}')";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("添加成功");
+                }
+                else
+                {
+                    MessageBox.Show("添加失败");
+                }
+                conn.Close();
+            }
             
         }
 
