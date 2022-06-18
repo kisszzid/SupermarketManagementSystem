@@ -33,6 +33,15 @@ namespace SupermarketManagementSystem
         private void button5_Click(object sender, EventArgs e)
         {
             //获取输入的名字关键字
+            string connString = "server=.;database=sqw;uid =sa;pwd =123456";
+            //创建链接对象
+            SqlConnection conn = new SqlConnection(connString);
+            //查询数据库sol语句
+            string sql = "select * from Huiyuang";
+            //定义DataAdapter对象
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            //填充数据
+            dap.Fill(ds);
             string key = textBox1.Text;
             //创建 DataView对象
             DataView dv = ds.Tables[0].DefaultView;
