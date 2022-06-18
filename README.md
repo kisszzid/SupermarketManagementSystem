@@ -1,0 +1,2 @@
+# SupermarketManagementSystem
+这是一个超市管理
