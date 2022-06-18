@@ -113,6 +113,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sqwDataSet10.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sqwDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet12.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sqwDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -229,6 +239,28 @@
     </None>
     <None Include="sqwDataSet10.xss">
       <DependentUpon>sqwDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet11.xsc">
+      <DependentUpon>sqwDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet11.xss">
+      <DependentUpon>sqwDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet12.xsc">
+      <DependentUpon>sqwDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet12.xss">
+      <DependentUpon>sqwDataSet12.xsd</DependentUpon>
     </None>
     <None Include="sqwDataSet2.xsc">
       <DependentUpon>sqwDataSet2.xsd</DependentUpon>

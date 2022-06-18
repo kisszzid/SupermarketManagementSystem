@@ -64,6 +64,10 @@ namespace SupermarketManagementSystem
 
         private void Form6_Load(object sender, EventArgs e)
         {
+            // TODO: 这行代码将数据加载到表“sqwDataSet12.Huiyuang”中。您可以根据需要移动或移除它。
+            this.huiyuangTableAdapter3.Fill(this.sqwDataSet12.Huiyuang);
+            // TODO: 这行代码将数据加载到表“sqwDataSet11.Huiyuang”中。您可以根据需要移动或移除它。
+            this.huiyuangTableAdapter2.Fill(this.sqwDataSet11.Huiyuang);
             // TODO: 这行代码将数据加载到表“sqwDataSet10.Huiyuang”中。您可以根据需要移动或移除它。
             this.huiyuangTableAdapter1.Fill(this.sqwDataSet10.Huiyuang);
             //创建链接字符串
@@ -71,7 +75,7 @@ namespace SupermarketManagementSystem
             //创建链接对象
             SqlConnection conn = new SqlConnection(connString);
             //查询数据库sol语句
-            string sql = "select * from Yuangong";
+            string sql = "select * from Huiyuang";
             //定义DataAdapter对象
             SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
             //填充数据
@@ -130,6 +134,7 @@ namespace SupermarketManagementSystem
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("添加成功", "提示", MessageBoxButtons.OKCancel);
+                    dataGridView1.DataSource = ds.Tables[0];
                 }
                 else
                 {
@@ -145,6 +150,41 @@ namespace SupermarketManagementSystem
         }
 
         private void textBox5_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(textBox2.Text);
+            string name = textBox3.Text;
+            string jibei = textBox5.Text;
+            string zhek = textBox6.Text;
+            string jifen = textBox4.Text;
+            string xfei = textBox7.Text;
+            string shengri = dateTimePicker1.Text;
+            string lifa = textBox8.Text;
+            string shuoji = textBox9.Text;
+            string banka = textBox10.Text;
+            string biez = textBox11.Text;
+            string oldname = textBox12.Text;
+            string sql = string.Format("update Huiyuang set ID = '{0}',name='{1}',jibei='{2}',zhek='{3}',jifen='{4}',xfei='{5}',shengri='{6}',lifa='{7}',shuoji='{8}',banka='{9}',biez='{10}'  where name='{11}'", ID, name, jibei, zhek, jifen, xfei, shengri, lifa, shuoji, banka, biez, oldname);
+            if (DBHelper.ExecuteNonQuery(sql))
+            {
+                MessageBox.Show("修改成功","提示");
+            }
+            else
+            {
+                MessageBox.Show("修改失败", "提示");
+            }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

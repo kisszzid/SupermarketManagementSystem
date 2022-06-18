@@ -55,9 +55,6 @@
             this.yuangongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yuangongTableAdapter = new SupermarketManagementSystem.sqwDataSet8TableAdapters.YuangongTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sqwDataSet9 = new SupermarketManagementSystem.sqwDataSet9();
-            this.yuangongBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.yuangongTableAdapter1 = new SupermarketManagementSystem.sqwDataSet9TableAdapters.YuangongTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dianhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,13 +62,14 @@
             this.tichenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruzhiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.beizDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.yuangongBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sqwDataSet9 = new SupermarketManagementSystem.sqwDataSet9();
+            this.yuangongTableAdapter1 = new SupermarketManagementSystem.sqwDataSet9TableAdapters.YuangongTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -136,7 +134,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(858, 394);
+            this.button7.Location = new System.Drawing.Point(858, 381);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(107, 37);
             this.button7.TabIndex = 7;
@@ -146,7 +144,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(858, 473);
+            this.button8.Location = new System.Drawing.Point(858, 454);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(107, 37);
             this.button8.TabIndex = 8;
@@ -301,20 +299,6 @@
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // sqwDataSet9
-            // 
-            this.sqwDataSet9.DataSetName = "sqwDataSet9";
-            this.sqwDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // yuangongBindingSource1
-            // 
-            this.yuangongBindingSource1.DataMember = "Yuangong";
-            this.yuangongBindingSource1.DataSource = this.sqwDataSet9;
-            // 
-            // yuangongTableAdapter1
-            // 
-            this.yuangongTableAdapter1.ClearBeforeFill = true;
-            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -372,16 +356,19 @@
             this.beizDataGridViewTextBoxColumn.Name = "beizDataGridViewTextBoxColumn";
             this.beizDataGridViewTextBoxColumn.Width = 125;
             // 
-            // pictureBox1
+            // yuangongBindingSource1
             // 
-            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.小猪佩奇;
-            this.pictureBox1.Location = new System.Drawing.Point(831, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.yuangongBindingSource1.DataMember = "Yuangong";
+            this.yuangongBindingSource1.DataSource = this.sqwDataSet9;
+            // 
+            // sqwDataSet9
+            // 
+            this.sqwDataSet9.DataSetName = "sqwDataSet9";
+            this.sqwDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // yuangongTableAdapter1
+            // 
+            this.yuangongTableAdapter1.ClearBeforeFill = true;
             // 
             // Form7
             // 
@@ -389,7 +376,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(977, 553);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox6);
@@ -419,9 +405,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,6 +449,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tichenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ruzhiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn beizDataGridViewTextBoxColumn;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -95,11 +95,11 @@ namespace SupermarketManagementSystem
             string sql = string.Format("delete from Yuangong where name = '{0}'",name );
             if (DBHelper.ExecuteNonQuery(sql))
             {
-                MessageBox.Show("删除成功");
+                MessageBox.Show("删除成功","提示", MessageBoxButtons.OKCancel);
             }
             else
             {
-                MessageBox.Show("删除失败");
+                MessageBox.Show("删除失败","提示", MessageBoxButtons.OKCancel);
             }
            
         }
@@ -120,11 +120,11 @@ namespace SupermarketManagementSystem
             string sql = string.Format("update Yuangong set dianh='{0}',dixin='{1}',tichen='{2}',ruzhi='{3}',beiz='{4}' where name='{5}'",dianh, dixin, tichen, ruzhi, beiz,name);
             if (DBHelper.ExecuteNonQuery(sql))
             {
-                MessageBox.Show("修改成功");
+                MessageBox.Show("修改成功","提示");
             }
             else
             {
-                MessageBox.Show("修改失败");
+                MessageBox.Show("修改失败","提示");
             }
         }
 
