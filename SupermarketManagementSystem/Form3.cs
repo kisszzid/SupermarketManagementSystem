@@ -90,8 +90,8 @@ namespace SupermarketManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form6 Form6 = new Form6();
-            Form6.Show();
+            Form5 Form5 = new Form5();
+            Form5.Show();
             Hide();
         }
 

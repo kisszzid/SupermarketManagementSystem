@@ -108,6 +108,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sqwDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sqwDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sqwDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet9.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +213,94 @@
     </None>
     <None Include="sqwDataSet1.xss">
       <DependentUpon>sqwDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet2.xsc">
+      <DependentUpon>sqwDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet2.xss">
+      <DependentUpon>sqwDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet3.xsc">
+      <DependentUpon>sqwDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet3.xss">
+      <DependentUpon>sqwDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet4.xsc">
+      <DependentUpon>sqwDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet4.xss">
+      <DependentUpon>sqwDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet5.xsc">
+      <DependentUpon>sqwDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet5.xss">
+      <DependentUpon>sqwDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet6.xsc">
+      <DependentUpon>sqwDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet6.xss">
+      <DependentUpon>sqwDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet7.xsc">
+      <DependentUpon>sqwDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet7.xss">
+      <DependentUpon>sqwDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet8.xsc">
+      <DependentUpon>sqwDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet8.xss">
+      <DependentUpon>sqwDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet9.xsc">
+      <DependentUpon>sqwDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet9.xss">
+      <DependentUpon>sqwDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

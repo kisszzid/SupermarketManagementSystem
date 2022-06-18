@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -43,7 +44,23 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.sqwDataSet5 = new SupermarketManagementSystem.sqwDataSet5();
+            this.meirixiaolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.meirixiaolTableAdapter = new SupermarketManagementSystem.sqwDataSet5TableAdapters.meirixiaolTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shulDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jinerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yinglDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zfbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zhaolingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zhaozyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bancDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shijianDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meirixiaolBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -132,7 +149,21 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.shulDataGridViewTextBoxColumn,
+            this.jinerDataGridViewTextBoxColumn,
+            this.yinglDataGridViewTextBoxColumn,
+            this.wxDataGridViewTextBoxColumn,
+            this.zfbDataGridViewTextBoxColumn,
+            this.zhaolingDataGridViewTextBoxColumn,
+            this.zhaozyDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.bancDataGridViewTextBoxColumn,
+            this.shijianDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.meirixiaolBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -157,6 +188,7 @@
             this.button11.TabIndex = 32;
             this.button11.Text = "会员管理";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -166,6 +198,7 @@
             this.button10.TabIndex = 31;
             this.button10.Text = "库存管理";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -175,6 +208,7 @@
             this.button9.TabIndex = 30;
             this.button9.Text = "进货采购";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -184,6 +218,109 @@
             this.button8.TabIndex = 29;
             this.button8.Text = "商品采购";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // sqwDataSet5
+            // 
+            this.sqwDataSet5.DataSetName = "sqwDataSet5";
+            this.sqwDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // meirixiaolBindingSource
+            // 
+            this.meirixiaolBindingSource.DataMember = "meirixiaol";
+            this.meirixiaolBindingSource.DataSource = this.sqwDataSet5;
+            // 
+            // meirixiaolTableAdapter
+            // 
+            this.meirixiaolTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // shulDataGridViewTextBoxColumn
+            // 
+            this.shulDataGridViewTextBoxColumn.DataPropertyName = "shul";
+            this.shulDataGridViewTextBoxColumn.HeaderText = "shul";
+            this.shulDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shulDataGridViewTextBoxColumn.Name = "shulDataGridViewTextBoxColumn";
+            this.shulDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // jinerDataGridViewTextBoxColumn
+            // 
+            this.jinerDataGridViewTextBoxColumn.DataPropertyName = "jiner";
+            this.jinerDataGridViewTextBoxColumn.HeaderText = "jiner";
+            this.jinerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.jinerDataGridViewTextBoxColumn.Name = "jinerDataGridViewTextBoxColumn";
+            this.jinerDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // yinglDataGridViewTextBoxColumn
+            // 
+            this.yinglDataGridViewTextBoxColumn.DataPropertyName = "yingl";
+            this.yinglDataGridViewTextBoxColumn.HeaderText = "yingl";
+            this.yinglDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yinglDataGridViewTextBoxColumn.Name = "yinglDataGridViewTextBoxColumn";
+            this.yinglDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // wxDataGridViewTextBoxColumn
+            // 
+            this.wxDataGridViewTextBoxColumn.DataPropertyName = "wx";
+            this.wxDataGridViewTextBoxColumn.HeaderText = "wx";
+            this.wxDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.wxDataGridViewTextBoxColumn.Name = "wxDataGridViewTextBoxColumn";
+            this.wxDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zfbDataGridViewTextBoxColumn
+            // 
+            this.zfbDataGridViewTextBoxColumn.DataPropertyName = "zfb";
+            this.zfbDataGridViewTextBoxColumn.HeaderText = "zfb";
+            this.zfbDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zfbDataGridViewTextBoxColumn.Name = "zfbDataGridViewTextBoxColumn";
+            this.zfbDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zhaolingDataGridViewTextBoxColumn
+            // 
+            this.zhaolingDataGridViewTextBoxColumn.DataPropertyName = "zhaoling";
+            this.zhaolingDataGridViewTextBoxColumn.HeaderText = "zhaoling";
+            this.zhaolingDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zhaolingDataGridViewTextBoxColumn.Name = "zhaolingDataGridViewTextBoxColumn";
+            this.zhaolingDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zhaozyDataGridViewTextBoxColumn
+            // 
+            this.zhaozyDataGridViewTextBoxColumn.DataPropertyName = "zhaozy";
+            this.zhaozyDataGridViewTextBoxColumn.HeaderText = "zhaozy";
+            this.zhaozyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zhaozyDataGridViewTextBoxColumn.Name = "zhaozyDataGridViewTextBoxColumn";
+            this.zhaozyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bancDataGridViewTextBoxColumn
+            // 
+            this.bancDataGridViewTextBoxColumn.DataPropertyName = "banc";
+            this.bancDataGridViewTextBoxColumn.HeaderText = "banc";
+            this.bancDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bancDataGridViewTextBoxColumn.Name = "bancDataGridViewTextBoxColumn";
+            this.bancDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // shijianDataGridViewTextBoxColumn
+            // 
+            this.shijianDataGridViewTextBoxColumn.DataPropertyName = "shijian";
+            this.shijianDataGridViewTextBoxColumn.HeaderText = "shijian";
+            this.shijianDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shijianDataGridViewTextBoxColumn.Name = "shijianDataGridViewTextBoxColumn";
+            this.shijianDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form8
             // 
@@ -207,9 +344,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form8";
-            this.Text = "Form8";
+            this.Text = "每日明细";
             this.Load += new System.EventHandler(this.Form8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meirixiaolBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +371,19 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
+        private sqwDataSet5 sqwDataSet5;
+        private System.Windows.Forms.BindingSource meirixiaolBindingSource;
+        private sqwDataSet5TableAdapters.meirixiaolTableAdapter meirixiaolTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shulDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jinerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yinglDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wxDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zfbDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zhaolingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zhaozyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bancDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shijianDataGridViewTextBoxColumn;
     }
 }
