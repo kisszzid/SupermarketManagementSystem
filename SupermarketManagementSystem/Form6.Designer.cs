@@ -77,6 +77,8 @@
             this.sqwDataSet12 = new SupermarketManagementSystem.sqwDataSet12();
             this.huiyuangBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.huiyuangTableAdapter3 = new SupermarketManagementSystem.sqwDataSet12TableAdapters.HuiyuangTableAdapter();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jibeiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,8 +90,6 @@
             this.shuojiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bankaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.biezDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.huiyuangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet10)).BeginInit();
@@ -496,94 +496,6 @@
             // 
             this.huiyuangTableAdapter3.ClearBeforeFill = true;
             // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // jibeiDataGridViewTextBoxColumn
-            // 
-            this.jibeiDataGridViewTextBoxColumn.DataPropertyName = "jibei";
-            this.jibeiDataGridViewTextBoxColumn.HeaderText = "jibei";
-            this.jibeiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.jibeiDataGridViewTextBoxColumn.Name = "jibeiDataGridViewTextBoxColumn";
-            this.jibeiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // zhekDataGridViewTextBoxColumn
-            // 
-            this.zhekDataGridViewTextBoxColumn.DataPropertyName = "zhek";
-            this.zhekDataGridViewTextBoxColumn.HeaderText = "zhek";
-            this.zhekDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.zhekDataGridViewTextBoxColumn.Name = "zhekDataGridViewTextBoxColumn";
-            this.zhekDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // jifenDataGridViewTextBoxColumn
-            // 
-            this.jifenDataGridViewTextBoxColumn.DataPropertyName = "jifen";
-            this.jifenDataGridViewTextBoxColumn.HeaderText = "jifen";
-            this.jifenDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.jifenDataGridViewTextBoxColumn.Name = "jifenDataGridViewTextBoxColumn";
-            this.jifenDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // xfeiDataGridViewTextBoxColumn
-            // 
-            this.xfeiDataGridViewTextBoxColumn.DataPropertyName = "xfei";
-            this.xfeiDataGridViewTextBoxColumn.HeaderText = "xfei";
-            this.xfeiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.xfeiDataGridViewTextBoxColumn.Name = "xfeiDataGridViewTextBoxColumn";
-            this.xfeiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // shengriDataGridViewTextBoxColumn
-            // 
-            this.shengriDataGridViewTextBoxColumn.DataPropertyName = "shengri";
-            this.shengriDataGridViewTextBoxColumn.HeaderText = "shengri";
-            this.shengriDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.shengriDataGridViewTextBoxColumn.Name = "shengriDataGridViewTextBoxColumn";
-            this.shengriDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // lifaDataGridViewTextBoxColumn
-            // 
-            this.lifaDataGridViewTextBoxColumn.DataPropertyName = "lifa";
-            this.lifaDataGridViewTextBoxColumn.HeaderText = "lifa";
-            this.lifaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lifaDataGridViewTextBoxColumn.Name = "lifaDataGridViewTextBoxColumn";
-            this.lifaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // shuojiDataGridViewTextBoxColumn
-            // 
-            this.shuojiDataGridViewTextBoxColumn.DataPropertyName = "shuoji";
-            this.shuojiDataGridViewTextBoxColumn.HeaderText = "shuoji";
-            this.shuojiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.shuojiDataGridViewTextBoxColumn.Name = "shuojiDataGridViewTextBoxColumn";
-            this.shuojiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // bankaDataGridViewTextBoxColumn
-            // 
-            this.bankaDataGridViewTextBoxColumn.DataPropertyName = "banka";
-            this.bankaDataGridViewTextBoxColumn.HeaderText = "banka";
-            this.bankaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bankaDataGridViewTextBoxColumn.Name = "bankaDataGridViewTextBoxColumn";
-            this.bankaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // biezDataGridViewTextBoxColumn
-            // 
-            this.biezDataGridViewTextBoxColumn.DataPropertyName = "biez";
-            this.biezDataGridViewTextBoxColumn.HeaderText = "biez";
-            this.biezDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.biezDataGridViewTextBoxColumn.Name = "biezDataGridViewTextBoxColumn";
-            this.biezDataGridViewTextBoxColumn.Width = 125;
-            // 
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(510, 63);
@@ -599,6 +511,94 @@
             this.label12.Size = new System.Drawing.Size(127, 15);
             this.label12.TabIndex = 55;
             this.label12.Text = "需要修改的姓名：";
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "卡号";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "姓名";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // jibeiDataGridViewTextBoxColumn
+            // 
+            this.jibeiDataGridViewTextBoxColumn.DataPropertyName = "jibei";
+            this.jibeiDataGridViewTextBoxColumn.HeaderText = "级别";
+            this.jibeiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.jibeiDataGridViewTextBoxColumn.Name = "jibeiDataGridViewTextBoxColumn";
+            this.jibeiDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zhekDataGridViewTextBoxColumn
+            // 
+            this.zhekDataGridViewTextBoxColumn.DataPropertyName = "zhek";
+            this.zhekDataGridViewTextBoxColumn.HeaderText = "折扣";
+            this.zhekDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zhekDataGridViewTextBoxColumn.Name = "zhekDataGridViewTextBoxColumn";
+            this.zhekDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // jifenDataGridViewTextBoxColumn
+            // 
+            this.jifenDataGridViewTextBoxColumn.DataPropertyName = "jifen";
+            this.jifenDataGridViewTextBoxColumn.HeaderText = "积分";
+            this.jifenDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.jifenDataGridViewTextBoxColumn.Name = "jifenDataGridViewTextBoxColumn";
+            this.jifenDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // xfeiDataGridViewTextBoxColumn
+            // 
+            this.xfeiDataGridViewTextBoxColumn.DataPropertyName = "xfei";
+            this.xfeiDataGridViewTextBoxColumn.HeaderText = "消费总额";
+            this.xfeiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.xfeiDataGridViewTextBoxColumn.Name = "xfeiDataGridViewTextBoxColumn";
+            this.xfeiDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // shengriDataGridViewTextBoxColumn
+            // 
+            this.shengriDataGridViewTextBoxColumn.DataPropertyName = "shengri";
+            this.shengriDataGridViewTextBoxColumn.HeaderText = "生日";
+            this.shengriDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shengriDataGridViewTextBoxColumn.Name = "shengriDataGridViewTextBoxColumn";
+            this.shengriDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lifaDataGridViewTextBoxColumn
+            // 
+            this.lifaDataGridViewTextBoxColumn.DataPropertyName = "lifa";
+            this.lifaDataGridViewTextBoxColumn.HeaderText = "历法";
+            this.lifaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lifaDataGridViewTextBoxColumn.Name = "lifaDataGridViewTextBoxColumn";
+            this.lifaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // shuojiDataGridViewTextBoxColumn
+            // 
+            this.shuojiDataGridViewTextBoxColumn.DataPropertyName = "shuoji";
+            this.shuojiDataGridViewTextBoxColumn.HeaderText = "手机";
+            this.shuojiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shuojiDataGridViewTextBoxColumn.Name = "shuojiDataGridViewTextBoxColumn";
+            this.shuojiDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bankaDataGridViewTextBoxColumn
+            // 
+            this.bankaDataGridViewTextBoxColumn.DataPropertyName = "banka";
+            this.bankaDataGridViewTextBoxColumn.HeaderText = "办卡日期";
+            this.bankaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bankaDataGridViewTextBoxColumn.Name = "bankaDataGridViewTextBoxColumn";
+            this.bankaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // biezDataGridViewTextBoxColumn
+            // 
+            this.biezDataGridViewTextBoxColumn.DataPropertyName = "biez";
+            this.biezDataGridViewTextBoxColumn.HeaderText = "备注";
+            this.biezDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.biezDataGridViewTextBoxColumn.Name = "biezDataGridViewTextBoxColumn";
+            this.biezDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form6
             // 
@@ -645,6 +645,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form6";
+            this.Text = "会员管理";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.huiyuangBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet4)).EndInit();
@@ -710,6 +711,8 @@
         private sqwDataSet12 sqwDataSet12;
         private System.Windows.Forms.BindingSource huiyuangBindingSource3;
         private sqwDataSet12TableAdapters.HuiyuangTableAdapter huiyuangTableAdapter3;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn jibeiDataGridViewTextBoxColumn;
@@ -721,7 +724,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn shuojiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bankaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn biezDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label12;
     }
 }

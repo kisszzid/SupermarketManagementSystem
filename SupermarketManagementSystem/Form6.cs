@@ -32,7 +32,14 @@ namespace SupermarketManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            //获取输入的名字关键字
+            string key = textBox1.Text;
+            //创建 DataView对象
+            DataView dv = ds.Tables[0].DefaultView;
+            //按名字模糊查询过滤数据源
+            dv.RowFilter = string.Format("name like '%{0}%'", key);
+            //设置DataGriView的数据源
+            this.dataGridView1.DataSource = dv;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -134,7 +141,16 @@ namespace SupermarketManagementSystem
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("添加成功", "提示", MessageBoxButtons.OKCancel);
-                    dataGridView1.DataSource = ds.Tables[0];
+                    string sql2 = "select * from Huiyuang";
+                    //定义DataAdapter对象
+                    SqlDataAdapter dap = new SqlDataAdapter(sql2, conn);
+                    //填充数据
+                    DataTable dat = new DataTable();
+                    dap.Fill(dat);
+                    //设置dataGridView1的数据源
+                    dataGridView1.DataSource = dat;
+                    conn.Close();
+                    conn.Dispose();
                 }
                 else
                 {
@@ -148,12 +164,10 @@ namespace SupermarketManagementSystem
         {
 
         }
-
         private void textBox5_TextChanged_1(object sender, EventArgs e)
         {
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             int ID = int.Parse(textBox2.Text);
@@ -172,11 +186,27 @@ namespace SupermarketManagementSystem
             if (DBHelper.ExecuteNonQuery(sql))
             {
                 MessageBox.Show("修改成功","提示");
+
+                string connString = "server=.;database=sqw;uid =sa;pwd =123456";
+                SqlConnection conn = new SqlConnection(connString);
+                string sql2 = "select * from Huiyuang";
+                //定义DataAdapter对象
+
+                SqlDataAdapter dap = new SqlDataAdapter(sql2, conn);
+                //填充数据
+                DataTable dat = new DataTable();
+                dap.Fill(dat);
+                //设置dataGridView1的数据源
+                dataGridView1.DataSource = dat;
+                conn.Close();
+                conn.Dispose();
             }
             else
             {
                 MessageBox.Show("修改失败", "提示");
             }
+            
+
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -186,6 +216,30 @@ namespace SupermarketManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
+            string connString = "server=.;database=sqw;uid =sa;pwd =123456";
+            SqlConnection conn = new SqlConnection(connString);
+            string name = textBox3.Text;
+            string sql = string.Format("delete from Huiyuang where name = '{0}'", name);
+            if (DBHelper.ExecuteNonQuery(sql))
+            {
+                MessageBox.Show("删除成功", "提示", MessageBoxButtons.OKCancel);
+                //查询数据库sol语句
+                string sql2 = "select * from Huiyuang";
+                //定义DataAdapter对象
+                SqlDataAdapter dap = new SqlDataAdapter(sql2, conn);
+                //填充数据
+                DataTable dat = new DataTable();
+                dap.Fill(dat);
+                //设置dataGridView1的数据源
+               dataGridView1.DataSource = dat;
+            }
+            else
+            {
+                MessageBox.Show("删除失败", "提示", MessageBoxButtons.OKCancel);
+            }
+
+            conn.Close();
+            conn.Dispose();
 
         }
     }
