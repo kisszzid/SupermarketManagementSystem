@@ -24,8 +24,8 @@ namespace SupermarketManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            form7.Show();
+            Form6 form6 = new Form6();
+            form6.Show();
             Hide();
         }
 

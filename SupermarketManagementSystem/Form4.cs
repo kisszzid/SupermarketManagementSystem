@@ -121,7 +121,7 @@ namespace SupermarketManagementSystem
                 }
                 else
                 {
-                    MessageBox.Show("添加失败","提示");
+                    MessageBox.Show("添加失败","提示", MessageBoxButtons.OKCancel);
                 }
                 conn.Close();
             }

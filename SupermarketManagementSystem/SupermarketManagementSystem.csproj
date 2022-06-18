@@ -108,6 +108,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sqwDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sqwDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqwDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sqwDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -213,6 +218,17 @@
     </None>
     <None Include="sqwDataSet1.xss">
       <DependentUpon>sqwDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet10.xsc">
+      <DependentUpon>sqwDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="sqwDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sqwDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sqwDataSet10.xss">
+      <DependentUpon>sqwDataSet10.xsd</DependentUpon>
     </None>
     <None Include="sqwDataSet2.xsc">
       <DependentUpon>sqwDataSet2.xsd</DependentUpon>
@@ -335,6 +351,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\猪.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小猪佩奇.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

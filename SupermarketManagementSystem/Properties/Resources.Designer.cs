@@ -93,6 +93,16 @@ namespace SupermarketManagementSystem.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 小猪佩奇 {
+            get {
+                object obj = ResourceManager.GetObject("小猪佩奇", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 放大镜 {
             get {
                 object obj = ResourceManager.GetObject("放大镜", resourceCulture);

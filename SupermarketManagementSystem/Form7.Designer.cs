@@ -65,16 +65,18 @@
             this.tichenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruzhiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.beizDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(705, 514);
+            this.button1.Location = new System.Drawing.Point(84, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 31);
             this.button1.TabIndex = 1;
@@ -84,43 +86,47 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(796, 514);
+            this.button2.Location = new System.Drawing.Point(188, 119);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 31);
             this.button2.TabIndex = 2;
             this.button2.Text = "修改";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(614, 514);
+            this.button3.Location = new System.Drawing.Point(297, 119);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 31);
             this.button3.TabIndex = 3;
             this.button3.Text = "删除";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(858, 97);
+            this.button4.Location = new System.Drawing.Point(858, 156);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 37);
             this.button4.TabIndex = 4;
             this.button4.Text = "商品查询";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(858, 156);
+            this.button5.Location = new System.Drawing.Point(858, 228);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(107, 37);
             this.button5.TabIndex = 5;
             this.button5.Text = "采购进货";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(858, 215);
+            this.button6.Location = new System.Drawing.Point(858, 304);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(107, 37);
             this.button6.TabIndex = 6;
@@ -130,16 +136,17 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(858, 274);
+            this.button7.Location = new System.Drawing.Point(858, 394);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(107, 37);
             this.button7.TabIndex = 7;
             this.button7.Text = "会员管理";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(858, 333);
+            this.button8.Location = new System.Drawing.Point(858, 473);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(107, 37);
             this.button8.TabIndex = 8;
@@ -247,7 +254,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(542, 59);
+            this.textBox6.Location = new System.Drawing.Point(538, 59);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 25);
             this.textBox6.TabIndex = 21;
@@ -286,12 +293,13 @@
             this.ruzhiDataGridViewTextBoxColumn,
             this.beizDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.yuangongBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 113);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 156);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(823, 395);
+            this.dataGridView1.Size = new System.Drawing.Size(840, 395);
             this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // sqwDataSet9
             // 
@@ -310,7 +318,7 @@
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "工号";
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
@@ -319,7 +327,7 @@
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "姓名";
             this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.Width = 125;
@@ -327,7 +335,7 @@
             // dianhDataGridViewTextBoxColumn
             // 
             this.dianhDataGridViewTextBoxColumn.DataPropertyName = "dianh";
-            this.dianhDataGridViewTextBoxColumn.HeaderText = "dianh";
+            this.dianhDataGridViewTextBoxColumn.HeaderText = "电话";
             this.dianhDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dianhDataGridViewTextBoxColumn.Name = "dianhDataGridViewTextBoxColumn";
             this.dianhDataGridViewTextBoxColumn.Width = 125;
@@ -335,7 +343,7 @@
             // dixinDataGridViewTextBoxColumn
             // 
             this.dixinDataGridViewTextBoxColumn.DataPropertyName = "dixin";
-            this.dixinDataGridViewTextBoxColumn.HeaderText = "dixin";
+            this.dixinDataGridViewTextBoxColumn.HeaderText = "底薪";
             this.dixinDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.dixinDataGridViewTextBoxColumn.Name = "dixinDataGridViewTextBoxColumn";
             this.dixinDataGridViewTextBoxColumn.Width = 125;
@@ -343,7 +351,7 @@
             // tichenDataGridViewTextBoxColumn
             // 
             this.tichenDataGridViewTextBoxColumn.DataPropertyName = "tichen";
-            this.tichenDataGridViewTextBoxColumn.HeaderText = "tichen";
+            this.tichenDataGridViewTextBoxColumn.HeaderText = "提成比例";
             this.tichenDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tichenDataGridViewTextBoxColumn.Name = "tichenDataGridViewTextBoxColumn";
             this.tichenDataGridViewTextBoxColumn.Width = 125;
@@ -351,7 +359,7 @@
             // ruzhiDataGridViewTextBoxColumn
             // 
             this.ruzhiDataGridViewTextBoxColumn.DataPropertyName = "ruzhi";
-            this.ruzhiDataGridViewTextBoxColumn.HeaderText = "ruzhi";
+            this.ruzhiDataGridViewTextBoxColumn.HeaderText = "入职日期";
             this.ruzhiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ruzhiDataGridViewTextBoxColumn.Name = "ruzhiDataGridViewTextBoxColumn";
             this.ruzhiDataGridViewTextBoxColumn.Width = 125;
@@ -359,10 +367,21 @@
             // beizDataGridViewTextBoxColumn
             // 
             this.beizDataGridViewTextBoxColumn.DataPropertyName = "beiz";
-            this.beizDataGridViewTextBoxColumn.HeaderText = "beiz";
+            this.beizDataGridViewTextBoxColumn.HeaderText = "备注";
             this.beizDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.beizDataGridViewTextBoxColumn.Name = "beizDataGridViewTextBoxColumn";
             this.beizDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.小猪佩奇;
+            this.pictureBox1.Location = new System.Drawing.Point(831, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form7
             // 
@@ -370,6 +389,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(977, 553);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox6);
@@ -401,6 +421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,5 +464,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tichenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ruzhiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn beizDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
