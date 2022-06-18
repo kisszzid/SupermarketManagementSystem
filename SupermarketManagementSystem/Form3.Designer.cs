@@ -53,13 +53,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
@@ -94,8 +88,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.huiyuangBindingSource)).BeginInit();
@@ -330,9 +322,7 @@
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.button19);
             this.panel3.Controls.Add(this.button18);
-            this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(-1, 351);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(817, 169);
@@ -350,7 +340,7 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(9, 13);
+            this.button19.Location = new System.Drawing.Point(599, 15);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(205, 45);
             this.button19.TabIndex = 23;
@@ -359,76 +349,20 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(9, 64);
+            this.button18.Location = new System.Drawing.Point(309, 15);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(275, 49);
             this.button18.TabIndex = 22;
             this.button18.Text = "选择";
             this.button18.UseVisualStyleBackColor = true;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel8.Controls.Add(this.label11);
-            this.panel8.Controls.Add(this.label10);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Location = new System.Drawing.Point(4, 119);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(277, 42);
-            this.panel8.TabIndex = 2;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(194, 17);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 15);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "找零：￥0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(113, 17);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 15);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "实收：￥0";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 15);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "上单数量：￥0";
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel7.Location = new System.Drawing.Point(287, 3);
+            this.panel7.Location = new System.Drawing.Point(3, 76);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(297, 158);
+            this.panel7.Size = new System.Drawing.Size(811, 85);
             this.panel7.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(590, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(224, 158);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel5.Location = new System.Drawing.Point(14, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 139);
-            this.panel5.TabIndex = 0;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel9
             // 
@@ -666,9 +600,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel4.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet)).EndInit();
@@ -702,12 +633,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
