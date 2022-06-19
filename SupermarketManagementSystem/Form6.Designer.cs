@@ -60,7 +60,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -90,6 +89,7 @@
             this.shuojiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bankaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.biezDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.huiyuangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet10)).BeginInit();
@@ -380,14 +380,6 @@
             this.label11.Text = "备注：";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(692, 63);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(113, 25);
-            this.textBox5.TabIndex = 46;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged_1);
-            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(869, 63);
@@ -600,12 +592,26 @@
             this.biezDataGridViewTextBoxColumn.Name = "biezDataGridViewTextBoxColumn";
             this.biezDataGridViewTextBoxColumn.Width = 125;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "金卡会员",
+            "银卡会员",
+            "普通会员",
+            "至尊黑卡"});
+            this.comboBox2.Location = new System.Drawing.Point(684, 63);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 23);
+            this.comboBox2.TabIndex = 56;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(979, 553);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.dataGridView1);
@@ -615,7 +621,6 @@
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -694,7 +699,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
@@ -724,5 +728,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn shuojiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bankaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn biezDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

@@ -132,11 +132,11 @@ namespace SupermarketManagementSystem
             string connstr = "server=.;database=sqw;uid=sa;pwd=123456";
             SqlConnection conn = new SqlConnection(connstr);
             conn.Open();
-            if (textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "" && textBox9.Text != "" && textBox10.Text != "" && textBox11.Text != "" )
+            if (textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && comboBox2.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "" && textBox9.Text != "" && textBox10.Text != "" && textBox11.Text != "" )
             {
                 int ID = int.Parse(textBox2.Text);
                 string name = textBox3.Text;
-                string jibei = textBox5.Text;
+                string jibei = comboBox2.Text;
                 string zhek = textBox6.Text;
                 string jifen = textBox4.Text;
                 string xfei = textBox7.Text;
@@ -181,7 +181,7 @@ namespace SupermarketManagementSystem
         {
             int ID = int.Parse(textBox2.Text);
             string name = textBox3.Text;
-            string jibei = textBox5.Text;
+            string jibei = comboBox2.Text;
             string zhek = textBox6.Text;
             string jifen = textBox4.Text;
             string xfei = textBox7.Text;
@@ -194,7 +194,7 @@ namespace SupermarketManagementSystem
             string sql = string.Format("update Huiyuang set ID = '{0}',name='{1}',jibei='{2}',zhek='{3}',jifen='{4}',xfei='{5}',shengri='{6}',lifa='{7}',shuoji='{8}',banka='{9}',biez='{10}'  where name='{11}'", ID, name, jibei, zhek, jifen, xfei, shengri, lifa, shuoji, banka, biez, oldname);
             if (DBHelper.ExecuteNonQuery(sql))
             {
-                MessageBox.Show("修改成功","提示");
+                MessageBox.Show("修改成功","提示", MessageBoxButtons.OKCancel);
 
                 string connString = "server=.;database=sqw;uid =sa;pwd =123456";
                 SqlConnection conn = new SqlConnection(connString);
@@ -212,7 +212,7 @@ namespace SupermarketManagementSystem
             }
             else
             {
-                MessageBox.Show("修改失败", "提示");
+                MessageBox.Show("修改失败", "提示", MessageBoxButtons.OKCancel);
             }
             
 

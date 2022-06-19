@@ -78,6 +78,16 @@ namespace SupermarketManagementSystem
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("添加成功", "提示", MessageBoxButtons.OKCancel);
+                    string sql2 = "select * from Yuangong";
+                    //定义DataAdapter对象
+                    SqlDataAdapter dap = new SqlDataAdapter(sql2, conn);
+                    //填充数据
+                    DataTable dat = new DataTable();
+                    dap.Fill(dat);
+                    //设置dataGridView1的数据源
+                    dataGridView1.DataSource = dat;
+                    conn.Close();
+                    conn.Dispose();
                 }
                 else
                 {
@@ -91,15 +101,27 @@ namespace SupermarketManagementSystem
         {
             string connString = "server=.;database=sqw;uid =sa;pwd =123456";
             SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
             string name = textBox2.Text;
             string sql = string.Format("delete from Yuangong where name = '{0}'",name );
             if (DBHelper.ExecuteNonQuery(sql))
             {
                 MessageBox.Show("删除成功","提示", MessageBoxButtons.OKCancel);
+                string sql2 = "select * from Yuangong";
+                //定义DataAdapter对象
+                SqlDataAdapter dap = new SqlDataAdapter(sql2, conn);
+                //填充数据
+                DataTable dat = new DataTable();
+                dap.Fill(dat);
+                //设置dataGridView1的数据源
+                dataGridView1.DataSource = dat;
+                conn.Close();
+                conn.Dispose();
             }
             else
             {
                 MessageBox.Show("删除失败","提示", MessageBoxButtons.OKCancel);
+                conn.Close();
             }
            
         }
@@ -120,11 +142,11 @@ namespace SupermarketManagementSystem
             string sql = string.Format("update Yuangong set dianh='{0}',dixin='{1}',tichen='{2}',ruzhi='{3}',beiz='{4}' where name='{5}'",dianh, dixin, tichen, ruzhi, beiz,name);
             if (DBHelper.ExecuteNonQuery(sql))
             {
-                MessageBox.Show("修改成功","提示");
+                MessageBox.Show("修改成功","提示", MessageBoxButtons.OKCancel);
             }
             else
             {
-                MessageBox.Show("修改失败","提示");
+                MessageBox.Show("修改失败","提示", MessageBoxButtons.OKCancel);
             }
         }
 
