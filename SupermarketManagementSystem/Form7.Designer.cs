@@ -74,7 +74,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(84, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 31);
@@ -85,7 +85,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(188, 119);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 31);
@@ -96,7 +96,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(297, 119);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 31);
@@ -107,7 +107,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(858, 156);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 37);
@@ -118,7 +118,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button5.BackColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(858, 228);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(107, 37);
@@ -129,7 +129,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(858, 304);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(107, 37);
@@ -140,7 +140,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(858, 381);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(107, 37);
@@ -151,12 +151,12 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(858, 454);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(107, 37);
             this.button8.TabIndex = 8;
-            this.button8.Text = "每日明细";
+            this.button8.Text = "更多";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -383,7 +383,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(977, 553);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);

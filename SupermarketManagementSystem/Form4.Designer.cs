@@ -126,6 +126,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("宋体", 15F);
             this.label1.Location = new System.Drawing.Point(477, 14);
             this.label1.Name = "label1";
@@ -173,7 +174,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(124, 32);
             this.button7.TabIndex = 27;
-            this.button7.Text = "每日明细";
+            this.button7.Text = "更多";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

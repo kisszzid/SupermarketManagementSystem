@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("苹果");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("黑美人西瓜");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("菠萝");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("草莓");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("水果类", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16});
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("牙刷");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("潘婷护发素               ");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("生活用品", new System.Windows.Forms.TreeNode[] {
-            treeNode18,
-            treeNode19});
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("饼干");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("纯牛奶");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("泡奶饼干");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("零食类", new System.Windows.Forms.TreeNode[] {
-            treeNode21,
-            treeNode22,
-            treeNode23});
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("苹果");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("黑美人西瓜");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("菠萝");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("草莓");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("水果类", new System.Windows.Forms.TreeNode[] {
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40});
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("牙刷");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("潘婷护发素               ");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("生活用品", new System.Windows.Forms.TreeNode[] {
+            treeNode42,
+            treeNode43});
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("饼干");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("纯牛奶");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("泡奶饼干");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("零食类", new System.Windows.Forms.TreeNode[] {
+            treeNode45,
+            treeNode46,
+            treeNode47});
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -157,7 +157,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(109, 42);
             this.button7.TabIndex = 10;
-            this.button7.Text = "每日明细";
+            this.button7.Text = "更多";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -179,35 +179,35 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(4, 86);
             this.treeView1.Name = "treeView1";
-            treeNode13.Name = "节点1";
-            treeNode13.Text = "苹果";
-            treeNode14.Name = "节点3";
-            treeNode14.Text = "黑美人西瓜";
-            treeNode15.Name = "节点4";
-            treeNode15.Text = "菠萝";
-            treeNode16.Name = "节点5";
-            treeNode16.Text = "草莓";
-            treeNode17.Checked = true;
-            treeNode17.Name = "节点0";
-            treeNode17.Text = "水果类";
-            treeNode18.Name = "节点10";
-            treeNode18.Text = "牙刷";
-            treeNode19.Name = "节点11";
-            treeNode19.Text = "潘婷护发素               ";
-            treeNode20.Name = "节点9";
-            treeNode20.Text = "生活用品";
-            treeNode21.Name = "节点17";
-            treeNode21.Text = "饼干";
-            treeNode22.Name = "节点18";
-            treeNode22.Text = "纯牛奶";
-            treeNode23.Name = "节点19";
-            treeNode23.Text = "泡奶饼干";
-            treeNode24.Name = "节点16";
-            treeNode24.Text = "零食类";
+            treeNode37.Name = "节点1";
+            treeNode37.Text = "苹果";
+            treeNode38.Name = "节点3";
+            treeNode38.Text = "黑美人西瓜";
+            treeNode39.Name = "节点4";
+            treeNode39.Text = "菠萝";
+            treeNode40.Name = "节点5";
+            treeNode40.Text = "草莓";
+            treeNode41.Checked = true;
+            treeNode41.Name = "节点0";
+            treeNode41.Text = "水果类";
+            treeNode42.Name = "节点10";
+            treeNode42.Text = "牙刷";
+            treeNode43.Name = "节点11";
+            treeNode43.Text = "潘婷护发素               ";
+            treeNode44.Name = "节点9";
+            treeNode44.Text = "生活用品";
+            treeNode45.Name = "节点17";
+            treeNode45.Text = "饼干";
+            treeNode46.Name = "节点18";
+            treeNode46.Text = "纯牛奶";
+            treeNode47.Name = "节点19";
+            treeNode47.Text = "泡奶饼干";
+            treeNode48.Name = "节点16";
+            treeNode48.Text = "零食类";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode20,
-            treeNode24});
+            treeNode41,
+            treeNode44,
+            treeNode48});
             this.treeView1.Size = new System.Drawing.Size(137, 455);
             this.treeView1.TabIndex = 11;
             // 
@@ -344,7 +344,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(977, 553);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button8);
