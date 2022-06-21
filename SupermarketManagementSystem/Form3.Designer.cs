@@ -34,15 +34,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -84,14 +77,15 @@
             this.diyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqwDataSet1 = new SupermarketManagementSystem.sqwDataSet1();
             this.diyTableAdapter = new SupermarketManagementSystem.sqwDataSet1TableAdapters.DiyTableAdapter();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -100,56 +94,65 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("宋体", 9F);
             this.button1.Location = new System.Drawing.Point(44, 110);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "商品销售";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button2.Font = new System.Drawing.Font("宋体", 9F);
             this.button2.Location = new System.Drawing.Point(44, 174);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 33);
             this.button2.TabIndex = 1;
             this.button2.Text = "采购进货";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button3.Font = new System.Drawing.Font("宋体", 9F);
             this.button3.Location = new System.Drawing.Point(44, 239);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 33);
             this.button3.TabIndex = 2;
             this.button3.Text = "库存查询";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button4.Font = new System.Drawing.Font("宋体", 9F);
             this.button4.Location = new System.Drawing.Point(45, 374);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 33);
             this.button4.TabIndex = 3;
             this.button4.Text = "每日明细";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.button10);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.button1);
@@ -166,80 +169,21 @@
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(8, 472);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(135, 33);
-            this.button10.TabIndex = 14;
-            this.button10.Text = "使用教程";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::SupermarketManagementSystem.Properties.Resources.日历;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 374);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 239);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
-            this.pictureBox4.Location = new System.Drawing.Point(7, 303);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button5.Font = new System.Drawing.Font("宋体", 9F);
             this.button5.Location = new System.Drawing.Point(44, 303);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 33);
             this.button5.TabIndex = 4;
             this.button5.Text = "会员管理";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SupermarketManagementSystem.Properties.Resources.OIP_C;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 174);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.金钱小图标;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 110);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label8);
@@ -248,18 +192,8 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(817, 109);
+            this.panel2.Size = new System.Drawing.Size(825, 109);
             this.panel2.TabIndex = 5;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::SupermarketManagementSystem.Properties.Resources.猪;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(117, 109);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
             // 
             // dateTimePicker1
             // 
@@ -313,16 +247,16 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Location = new System.Drawing.Point(-1, 351);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(817, 169);
+            this.panel3.Size = new System.Drawing.Size(825, 169);
             this.panel3.TabIndex = 6;
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.Controls.Add(this.textBox6);
             this.panel7.Controls.Add(this.button7);
             this.panel7.Controls.Add(this.label7);
@@ -336,7 +270,7 @@
             this.panel7.Controls.Add(this.textBox2);
             this.panel7.Location = new System.Drawing.Point(3, 20);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(811, 141);
+            this.panel7.Size = new System.Drawing.Size(822, 141);
             this.panel7.TabIndex = 1;
             // 
             // textBox6
@@ -344,17 +278,19 @@
             this.textBox6.Location = new System.Drawing.Point(530, 3);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(278, 135);
+            this.textBox6.Size = new System.Drawing.Size(284, 135);
             this.textBox6.TabIndex = 9;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(254, 69);
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button7.Location = new System.Drawing.Point(265, 90);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(135, 33);
             this.button7.TabIndex = 15;
             this.button7.Text = "添加商品";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label7
@@ -433,11 +369,12 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.button21);
             this.panel9.Controls.Add(this.textBox1);
-            this.panel9.Controls.Add(this.label14);
             this.panel9.Controls.Add(this.label13);
+            this.panel9.Controls.Add(this.label14);
             this.panel9.Controls.Add(this.label12);
             this.panel9.Font = new System.Drawing.Font("宋体", 10F);
             this.panel9.Location = new System.Drawing.Point(-1, 518);
@@ -447,19 +384,20 @@
             // 
             // button21
             // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button21.Font = new System.Drawing.Font("宋体", 9F);
-            this.button21.Location = new System.Drawing.Point(789, 3);
+            this.button21.Location = new System.Drawing.Point(822, 3);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(177, 29);
+            this.button21.Size = new System.Drawing.Size(143, 29);
             this.button21.TabIndex = 15;
             this.button21.Text = "重新登录";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 9F);
-            this.textBox1.Location = new System.Drawing.Point(485, 6);
+            this.textBox1.Location = new System.Drawing.Point(642, 7);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 25);
             this.textBox1.TabIndex = 3;
@@ -477,7 +415,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 9F);
-            this.label13.Location = new System.Drawing.Point(265, 10);
+            this.label13.Location = new System.Drawing.Point(478, 11);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(148, 15);
             this.label13.TabIndex = 1;
@@ -487,7 +425,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("宋体", 9F);
-            this.label12.Location = new System.Drawing.Point(13, 9);
+            this.label12.Location = new System.Drawing.Point(255, 10);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(178, 15);
             this.label12.TabIndex = 0;
@@ -526,12 +464,12 @@
             this.xiaosyDataGridViewTextBoxColumn,
             this.biezDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.diyBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 108);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(816, 257);
+            this.dataGridView1.Size = new System.Drawing.Size(825, 257);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -621,6 +559,78 @@
             // 
             this.diyTableAdapter.ClearBeforeFill = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(11, 5);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(192, 25);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "欢迎光临小猪佩奇超市";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::SupermarketManagementSystem.Properties.Resources.猪;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(117, 109);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::SupermarketManagementSystem.Properties.Resources.日历;
+            this.pictureBox5.Location = new System.Drawing.Point(8, 374);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SupermarketManagementSystem.Properties.Resources.放大镜;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 239);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SupermarketManagementSystem.Properties.Resources.会员小图标;
+            this.pictureBox4.Location = new System.Drawing.Point(7, 303);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SupermarketManagementSystem.Properties.Resources.OIP_C;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 174);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SupermarketManagementSystem.Properties.Resources.金钱小图标;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 110);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -635,14 +645,8 @@
             this.Text = "商品销售";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -653,6 +657,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -675,7 +685,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
@@ -714,5 +723,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
     }
 }

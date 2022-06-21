@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -88,10 +87,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox9);
             this.panel2.Controls.Add(this.label10);
@@ -129,24 +127,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 15F);
-            this.label1.Location = new System.Drawing.Point(3, 245);
+            this.label1.Location = new System.Drawing.Point(477, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(337, 25);
             this.label1.TabIndex = 32;
             this.label1.Text = "Incoming goods management";
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(607, 218);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(86, 32);
-            this.button8.TabIndex = 31;
-            this.button8.Text = "取消";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(502, 218);
+            this.button2.Location = new System.Drawing.Point(254, 221);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 32);
             this.button2.TabIndex = 30;
@@ -156,7 +145,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(342, 218);
+            this.textBox9.Location = new System.Drawing.Point(82, 238);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(101, 25);
             this.textBox9.TabIndex = 29;
@@ -164,7 +153,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(272, 218);
+            this.label10.Location = new System.Drawing.Point(12, 238);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 15);
             this.label10.TabIndex = 28;
@@ -172,7 +161,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(82, 165);
+            this.textBox6.Location = new System.Drawing.Point(82, 190);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(101, 25);
             this.textBox6.TabIndex = 16;
@@ -229,14 +218,14 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(342, 175);
+            this.dateTimePicker2.Location = new System.Drawing.Point(346, 150);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 25);
             this.dateTimePicker2.TabIndex = 21;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(342, 135);
+            this.textBox8.Location = new System.Drawing.Point(346, 94);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(151, 25);
             this.textBox8.TabIndex = 20;
@@ -244,7 +233,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(272, 135);
+            this.label8.Location = new System.Drawing.Point(276, 97);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 15);
             this.label8.TabIndex = 19;
@@ -253,16 +242,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(272, 175);
+            this.label9.Location = new System.Drawing.Point(276, 157);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 15);
             this.label9.TabIndex = 17;
             this.label9.Text = "日期：";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 175);
+            this.label6.Location = new System.Drawing.Point(12, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 15;
@@ -270,7 +260,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(342, 91);
+            this.textBox7.Location = new System.Drawing.Point(346, 43);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(101, 25);
             this.textBox7.TabIndex = 14;
@@ -279,7 +269,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(272, 94);
+            this.label7.Location = new System.Drawing.Point(276, 46);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 15);
             this.label7.TabIndex = 13;
@@ -287,7 +277,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(82, 129);
+            this.textBox5.Location = new System.Drawing.Point(82, 140);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(101, 25);
             this.textBox5.TabIndex = 12;
@@ -295,7 +285,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 135);
+            this.label5.Location = new System.Drawing.Point(12, 150);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 11;
@@ -303,7 +293,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(82, 91);
+            this.textBox4.Location = new System.Drawing.Point(82, 94);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(101, 25);
             this.textBox4.TabIndex = 10;
@@ -311,7 +301,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 94);
+            this.label4.Location = new System.Drawing.Point(12, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 15);
             this.label4.TabIndex = 9;
@@ -343,9 +333,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(566, 14);
+            this.textBox1.Location = new System.Drawing.Point(630, 221);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 25);
+            this.textBox1.Size = new System.Drawing.Size(131, 31);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -360,7 +351,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(593, 53);
+            this.button1.Location = new System.Drawing.Point(520, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 32);
             this.button1.TabIndex = 2;
@@ -370,7 +361,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(342, 15);
+            this.dateTimePicker1.Location = new System.Drawing.Point(593, 150);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
             this.dateTimePicker1.TabIndex = 0;
@@ -505,7 +496,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(719, 218);
+            this.button9.Location = new System.Drawing.Point(387, 221);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(86, 32);
             this.button9.TabIndex = 33;
@@ -572,7 +563,6 @@
         private sqwDataSet6 sqwDataSet6;
         private System.Windows.Forms.BindingSource jinhBindingSource1;
         private sqwDataSet6TableAdapters.JinhTableAdapter jinhTableAdapter1;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn shulDataGridViewTextBoxColumn;

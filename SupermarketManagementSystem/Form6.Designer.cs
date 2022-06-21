@@ -101,9 +101,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(7, 14);
+            this.button1.Location = new System.Drawing.Point(70, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 38);
             this.button1.TabIndex = 0;
@@ -113,9 +113,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(98, 14);
+            this.button2.Location = new System.Drawing.Point(184, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 38);
             this.button2.TabIndex = 1;
@@ -125,9 +125,9 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(189, 14);
+            this.button3.Location = new System.Drawing.Point(302, 10);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 38);
             this.button3.TabIndex = 2;
@@ -137,19 +137,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(376, 19);
+            this.textBox1.Location = new System.Drawing.Point(510, 12);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 25);
+            this.textBox1.Size = new System.Drawing.Size(195, 36);
             this.textBox1.TabIndex = 5;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(510, 10);
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(413, 10);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(85, 38);
             this.button5.TabIndex = 6;
             this.button5.Text = "查询";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // huiyuangBindingSource
@@ -164,57 +166,62 @@
             // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button8.Location = new System.Drawing.Point(845, 160);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(122, 43);
             this.button8.TabIndex = 24;
             this.button8.Text = "商品采购";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button9.Location = new System.Drawing.Point(845, 222);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(122, 43);
             this.button9.TabIndex = 25;
             this.button9.Text = "进货采购";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button10.Location = new System.Drawing.Point(845, 284);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(122, 43);
             this.button10.TabIndex = 26;
             this.button10.Text = "库存管理";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button11.Location = new System.Drawing.Point(845, 351);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(122, 43);
             this.button11.TabIndex = 27;
             this.button11.Text = "会员管理";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button12.Location = new System.Drawing.Point(845, 419);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(122, 43);
             this.button12.TabIndex = 28;
             this.button12.Text = "每日明细";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Aqua;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button6.Location = new System.Drawing.Point(845, 488);
             this.button6.Name = "button6";
@@ -250,7 +257,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(366, 111);
+            this.label3.Location = new System.Drawing.Point(371, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 32;
@@ -258,7 +265,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(412, 104);
+            this.dateTimePicker1.Location = new System.Drawing.Point(426, 104);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(160, 25);
             this.dateTimePicker1.TabIndex = 33;
@@ -334,7 +341,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(580, 108);
+            this.label9.Location = new System.Drawing.Point(602, 108);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 15);
             this.label9.TabIndex = 43;
@@ -375,7 +382,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(638, 105);
+            this.textBox8.Location = new System.Drawing.Point(660, 105);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(90, 25);
             this.textBox8.TabIndex = 49;
@@ -588,7 +595,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(979, 553);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label12);
