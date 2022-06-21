@@ -221,6 +221,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 16;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -400,7 +401,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form7";
-            this.Text = "员工资料设置";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yuangongBindingSource)).EndInit();

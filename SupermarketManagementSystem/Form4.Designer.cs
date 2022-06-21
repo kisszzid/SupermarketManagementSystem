@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,10 +64,6 @@
             this.jinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jinhTableAdapter = new SupermarketManagementSystem.sqwDataSet3TableAdapters.JinhTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sqwDataSet6 = new SupermarketManagementSystem.sqwDataSet6();
-            this.jinhBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.jinhTableAdapter1 = new SupermarketManagementSystem.sqwDataSet6TableAdapters.JinhTableAdapter();
-            this.button8 = new System.Windows.Forms.Button();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shulDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,19 +73,23 @@
             this.zhekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.riqiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.baizDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.jinhBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sqwDataSet6 = new SupermarketManagementSystem.sqwDataSet6();
+            this.jinhTableAdapter1 = new SupermarketManagementSystem.sqwDataSet6TableAdapters.JinhTableAdapter();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jinhBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jinhBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.button2);
@@ -122,6 +124,25 @@
             this.panel2.Size = new System.Drawing.Size(977, 285);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 15F);
+            this.label1.Location = new System.Drawing.Point(3, 245);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(337, 25);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Incoming goods management";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(607, 218);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(86, 32);
+            this.button8.TabIndex = 31;
+            this.button8.Text = "取消";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -302,6 +323,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(151, 25);
             this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -325,6 +347,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(113, 25);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -393,29 +416,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(977, 267);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // sqwDataSet6
-            // 
-            this.sqwDataSet6.DataSetName = "sqwDataSet6";
-            this.sqwDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // jinhBindingSource1
-            // 
-            this.jinhBindingSource1.DataMember = "Jinh";
-            this.jinhBindingSource1.DataSource = this.sqwDataSet6;
-            // 
-            // jinhTableAdapter1
-            // 
-            this.jinhTableAdapter1.ClearBeforeFill = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(607, 218);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(86, 32);
-            this.button8.TabIndex = 31;
-            this.button8.Text = "取消";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -489,15 +489,29 @@
             this.baizDataGridViewTextBoxColumn.Name = "baizDataGridViewTextBoxColumn";
             this.baizDataGridViewTextBoxColumn.Width = 125;
             // 
-            // label1
+            // jinhBindingSource1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 15F);
-            this.label1.Location = new System.Drawing.Point(3, 245);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 25);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Incoming goods management";
+            this.jinhBindingSource1.DataMember = "Jinh";
+            this.jinhBindingSource1.DataSource = this.sqwDataSet6;
+            // 
+            // sqwDataSet6
+            // 
+            this.sqwDataSet6.DataSetName = "sqwDataSet6";
+            this.sqwDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // jinhTableAdapter1
+            // 
+            this.jinhTableAdapter1.ClearBeforeFill = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(719, 218);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(86, 32);
+            this.button9.TabIndex = 33;
+            this.button9.Text = "删除";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form4
             // 
@@ -515,8 +529,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jinhBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jinhBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sqwDataSet6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -569,5 +583,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn riqiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn baizDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button9;
     }
 }
